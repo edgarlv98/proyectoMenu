@@ -7,3 +7,10 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("myDiv").style.opacity = "1";
 }
+
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeNav();
+  }
+})
+
